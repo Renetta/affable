@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affable IITC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section class="sidebar">
+
+        <nav class="navbar navbar-expand d-flex flex-column text-md-center" id="sidenav">
+            <div class="close-align">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <a href="#" class="navbar-brand text-light md-5 ">
+
+                <div class="text-capitalize text-break ">
+                    <span class="heading-name">Affable Infotech</span>
+
+                </div>
+                <div class="text-capitalize text-break">
+                    <span class="sub-heading-name text-light">Information technology Consultancy</span>
+                </div>
+            </a>
+            <hr class="solid divider">
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <ul class="navbar-nav d-flex flex-column mt-3 w-100  text-center">
+                <li class="nav-item w-100">
+                    <a class="nav-link text-light active p-1 font-size-1rem" aria-current="home" href="#">Home</a>
+                </li>
+                <li class="nav-item w-100">
+                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="services"
+                        href="#">Services</a>
+                </li>
+                <li class="nav-item w-100">
+                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="profile" href="#">Company
+                        profile</a>
+                </li>
+                <li class="nav-item w-100">
+                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="about" href="#">About Us</a>
+                </li>
+                <li class="nav-item w-100">
+                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="contact" href="#">Contact
+                        Us</a>
+                </li>
+            </ul>
+            <!-- </div> -->
+        </nav>
+    </section>
+    <section class="body-container">
+
+        <header class="page-header gradient" style="background-image: linear-gradient(rgb(70 60 201 / 63%), rgba(14, 13, 12, 0.7)), 
+        url('./assets/header.jpg');">
+            <button class="btn" id="menu-btn"><i class="bi bi-list"></i></button>
+            <div class="conatiner">
+                <div class="row align-items-start justify-content-start" style="margin-left: 40px">
+                    <div class="col-md-5 mt-4 mb-5 ">
+                        <h2 class="text-center"><span>AFFABLE INFOTECH I.T.C</span></h2>
+                        <!-- <hr> -->
+                        <p class="fs-6 text-break">“Every business can benefit from good quality
+                            management consulting services.
+                            Consultants are able to gather, assemble and utilize data in unique ways.
+                        </p>
+                        <button type="button" class="btn btn-outline-primary btn-lg" 
+                        style="margin-left: 25%;">Services</button>
+                    </div>
+                    <!-- <div class="col-md-5">
+                        <img src="./assets/header.jpg" alt="header">
+                    </div> -->
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,256L48,234.7C96,213,192,171,288,170.7C384,171,480,213,576,202.7C672,192,768,128,864,133.3C960,139,1056,213,1152,229.3C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </header>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script>
+        var menubtn = document.querySelector("#menu-btn");
+        var sidenav = document.querySelector('#sidenav');
+        var container = document.querySelector('.body-container');
+        var btnClose = document.querySelector(".btn-close");
+        var navlink = document.querySelector(".nav-item");
+        sidenav.classList.add("active-nav");
+        container.classList.add("active-body-container");
+        menubtn.addEventListener('click', () => {
+            sidenav.classList.toggle("active-nav");
+            container.classList.toggle("active-body-container");
+            menubtn.classList.add("align-btn");
+            sidenav.classList.remove("hide-nav");
+            container.classList.remove("align-body");
+        });
+
+        btnClose.addEventListener('click', () => {
+            sidenav.classList.add("hide-nav");
+            container.classList.add("align-body");
+            sidenav.classList.remove("active-nav");
+            container.classList.remove("active-body-container");
+        });
+
+        navlink.addEventListener('click', () => {
+            sidenav.classList.add("hide-nav");
+            container.classList.add("align-body");
+            sidenav.classList.remove("active-nav");
+            container.classList.remove("active-body-container");
+        });
+
+        // document.querySelectorAll('.nav-item').forEach(el => {
+        //     el.addEventListener('click', function () {
+        //         console.log(this.current);
+        //     });
+        // });
+
+
+    </script>
+</body>
+
+</html>
