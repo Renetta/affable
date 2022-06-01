@@ -1,15 +1,43 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 * {
     margin: 0;
     /* box-sizing: border-box; */
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     height: 100%;
     background-color: #fff;
 }
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 54px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 28px;
+}
+h4 {
+    font-size: 24px;
+}
+h5 {
+    font-size: 18px;
+} */
+
 
 .text-center {
     text-align: center;
@@ -39,7 +67,7 @@ body {
 }
 
 
-.visit-btn {
+.visit-btn {    
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -51,7 +79,7 @@ body {
     position: relative;
     cursor: pointer;
     margin-top: 30px;
-    transition: 1s;
+    transition: all 1s ease;
     /* background: linear-gradient(to right, #1b78bd, #f1722f); */
 }
 
@@ -60,7 +88,8 @@ body {
     color: #fff;
     /* font-weight: bold; */
     background: linear-gradient(191deg, rgb(27 30 70) 40%, rgb(33 42 88 / 95%) 65%);
-    transition: 1s;
+    /* transition: 1s; */
+    transform: translateY(5px);
 }
 
 
@@ -86,14 +115,14 @@ body {
 }
 
 .site-footer .heading {
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 400;
+    color:aliceblue;
+    /* font-size: 20px;
+    font-weight: 400; */
 }
 
 .site-footer .footer-link li {
-    line-height: 1.5;
-    margin-bottom: 15px;
+    /* line-height: 1.5; */
+    margin-bottom: 2px;
 }
 
 .gradient {
@@ -107,20 +136,69 @@ body {
     color: #fff;
     border-radius: 20px;
     padding: 6px 20px;
-    transition: 2s;
+    transition: 0.5s;
 }
 
-.canvas-background-change {
-    background: linear-gradient(103deg,
-            rgb(25 15 177 / 72%) 65%,
-            rgba(105, 0, 199, 1) 41%);
-    color: #fff;
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+  background: #fff;
+  margin: auto;
+  color: #2a315c;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #00093c;
+  color: #fff;
+  }
+  
+  .dropdown-menu {
+    padding: 20px;
+    background: #00093c;
+    color: #fff;
+  }
+  
+  .dropdown-menu a {
+    background: #00093c;
+    color: #fff;
+  }
+  
+  .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background: #00093c;
+  }
+  
+  .dropdown-toggle.active{
+    background: #fff;
+  }
+  
+  .dropdown-menu a:hover {
+    background: #fff;
+    color: #00093c;
+    margin: auto;
+  }
+
+/* .nav-link:hover {
+    background-color: #fff;
+    color: #2a315c;
+} */
+.canvas-background-change {
+    color: aliceblue;
+    background: rgb(34, 124, 195);
+    background: linear-gradient(191deg, rgb(27 30 70) 40%, rgb(33 42 88 / 95%) 65%);
+}
+
+.navbar-toggler {
+    background: #84a5c3;
+    border-color: #84a5c3;
+    margin-left: -70px;
+  }
 
 
 .page-header {
     color: #fff;
-    margin-top: 4rem;
+    margin-top: 57px;
     /* height: 60vh; */
     /* height: 94vh; */
     font-size: 1.25rem;
@@ -131,11 +209,17 @@ body {
     width: -webkit-fill-available;
 }
 
+.page-header h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
 .contactus {
     color: #fff;
     /* margin-top: 4rem; */
     /* height: 60vh; */
     /* height: 94vh; */
+    margin-top: -45px;
     font-size: 1.25rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,17 +231,19 @@ body {
 .contact-us {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: cover; 
+    /* margin-top: 65px; */
+    
 }
-
-.heading {
+/* .heading {
     font-weight: bolder;
-    transition: all 2s ease;
-}
+    transition: all 5s ease;
+    transform: translateY(20px)
+} */
 
 .services {
     margin-top: -97px;
+    
 }
 
 .service-name {
@@ -181,30 +267,35 @@ body {
 }
 
 .contact-cont {
-    background: #f3f3f3;
-    margin-top: -30px"
+    background: #f3f3f3; 
+    margin-top: -100px"
+}
 
+.location-align {
+    width: 100%; 
+    margin-top:-100px;
 }
 
 .service-details {
     background: aliceblue;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .service-heading {
-    font-size: x-large;
-    font-weight: 700;
+    font-weight: 800;
+    color: #084298;
 }
 
-.service-subheading {
-    font-size: 40px;
+.text-heading h1 {
+    font-weight: bold;
+    -webkit-text-stroke: 1em #000;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
 }
+
 
 .heading-section {
-    height: 42vh;
+    height: 40vh;
     width: 100%;
     background-position: center center;
     background-size: cover;
@@ -233,14 +324,9 @@ body {
     animation-delay: 1s;
 }
 
-
 .text-heading1 {
-    /* width: 100%; */
     color: #000;
     position: relative;
-    /* top: 50%; */
-    /* left: 0; */
-    /* transform: translate(0%, 0%); */
     text-align: center;
 }
 
@@ -248,29 +334,45 @@ body {
     font-size: 40px;
     color: #000;
     font-weight: bold;
-    /* text-transform: uppercase; */
     letter-spacing: 1px;
-    font-family: auto;
+    /* font-family: auto; */
     text-shadow: 1px 1px 1px black;
     animation-delay: 1s;
+}
+
+.service-top-align {
+    margin-top: -200px;
 }
 
 .hover-effect {
     cursor: pointer;
     /* font-size: 1.5rem; */
     font-weight: bold;
-    color: #000;
+    color: #fff;
+    background-color: #2a315c;
     /* box-shadow: 0 0 9px 0px rgb(0 0 0 / 13%); */
+    transition: all 0.5s ease;
     box-shadow: 0 0 9px rgba(0 0 0 / 13%)
 }
 
 .hover-effect:hover {
-    color: #fff;
-    background-color: #2a315c;
+    color: #000;
+    background-color: #fff;
     box-shadow: 1px 3px 0px 2px #1b1e460d;
+    transform: translateY(5px);
 }
 
+.service-home {
+    margin-top: -65px;
+}
+
+.service-home-row {
+    margin-top: -75px;
+}
+
+
 .about-item { 
+    height: auto;
     background-color: #e9ecef7d;;
     padding: 25px;
     box-shadow: 0 0 9px rgba(0 0 0 / 13%)
@@ -306,14 +408,27 @@ body {
     transition: all 400ms ease-in-out;
 }
 
+
 @media(max-width: 700px) {
     .services {
         margin-top: 0px;
     }
 
-    .contact-cont {
-        margin-top: 70px"
+    .contact-cont{
+        margin-top: 40px;
+    }
 
+    .location-align {
+        margin-top:-25px;
+        margin-left: 0px;
+    }
+
+    .service-top-align {
+        margin-top: -45px;
+    }
+
+    .service-home-row {
+        margin-top: 0px;
     }
 
 }

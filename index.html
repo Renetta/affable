@@ -8,84 +8,540 @@
     <title>Affable IITC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <section class="sidebar">
-
-        <nav class="navbar navbar-expand d-flex flex-column text-md-center" id="sidenav">
-            <div class="close-align">
-                <button type="button" class="btn-close" aria-label="Close"></button>
+    <nav class="navbar navbar-expand-lg fixed-top background-change">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color:aliceblue;">Affable Infotech I.T.C</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Overview
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-dismiss="offcanvas">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Company Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-            <a href="#" class="navbar-brand text-light md-5 ">
-
-                <div class="text-capitalize text-break ">
-                    <span class="heading-name">Affable Infotech</span>
-
+            <div class="offcanvas offcanvas-end justify-content-center" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img [src]="'./assets/images/logo.png'" width="100" alt="affableLogo" /><b>Affable Infotech
+                            I.T.C</b>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-                <div class="text-capitalize text-break">
-                    <span class="sub-heading-name text-light">Information technology Consultancy</span>
+                <div class="offcanvas-body canvas-background-change">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-dismiss="offcanvas">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Company Profile</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <hr class="solid divider">
-            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-            <ul class="navbar-nav d-flex flex-column mt-3 w-100  text-center">
-                <li class="nav-item w-100">
-                    <a class="nav-link text-light active p-1 font-size-1rem" aria-current="home" href="#">Home</a>
-                </li>
-                <li class="nav-item w-100">
-                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="services"
-                        href="#">Services</a>
-                </li>
-                <li class="nav-item w-100">
-                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="profile" href="#">Company
-                        profile</a>
-                </li>
-                <li class="nav-item w-100">
-                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="about" href="#">About Us</a>
-                </li>
-                <li class="nav-item w-100">
-                    <a class="nav-link text-light active p-2 font-size-1rem" aria-current="contact" href="#">Contact
-                        Us</a>
-                </li>
-            </ul>
-            <!-- </div> -->
-        </nav>
-    </section>
-    <section class="body-container">
+            </div>
+        </div>
+    </nav>
 
-        <header class="page-header gradient" style="background-image: linear-gradient(rgb(70 60 201 / 63%), rgba(14, 13, 12, 0.7)), 
-        url('./assets/header.jpg');">
-            <button class="btn" id="menu-btn"><i class="bi bi-list"></i></button>
-            <div class="conatiner">
-                <div class="row align-items-start justify-content-start" style="margin-left: 40px">
-                    <div class="col-md-5 mt-4 mb-5 ">
-                        <h2 class="text-center"><span>AFFABLE INFOTECH I.T.C</span></h2>
-                        <!-- <hr> -->
-                        <p class="fs-6 text-break">“Every business can benefit from good quality
-                            management consulting services.
-                            Consultants are able to gather, assemble and utilize data in unique ways.
-                        </p>
-                        <button type="button" class="btn btn-outline-primary btn-lg" 
-                        style="margin-left: 25%;">Services</button>
+    <section class=" page-header" style="background-image: linear-gradient(rgb(70 60 201 / 63%), rgba(14, 13, 12, 0.7)), 
+    url('./assets/header.jpg');">
+        <div class="conatiner">
+            <div class="row align-items-center justify-content-center" style="width: 100%">
+                <div class="col-md-6 mt-5 mb-5 ">
+                    <h2 class="text-center"><span class="heading">AFFABLE INFOTECH I.T.C</span></h2>
+                    <hr>
+                    <p class="fs-6 text-break">“Every business can benefit from good quality
+                        management consulting services.
+                        Consultants are able to gather, assemble and utilize data in unique ways.
+                    </p>
+                    <div style="margin-left: 30%">
+                        <button type="button" class="btn btn-outline-primary btn-lg visit-btn">Services</button>
                     </div>
-                    <!-- <div class="col-md-5">
-                        <img src="./assets/header.jpg" alt="header">
-                    </div> -->
+
                 </div>
             </div>
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,192L26.7,186.7C53.3,181,107,171,160,160C213.3,149,267,139,320,154.7C373.3,171,427,213,480,208C533.3,203,587,149,640,117.3C693.3,85,747,75,800,90.7C853.3,107,907,149,960,186.7C1013.3,224,1067,256,1120,250.7C1173.3,245,1227,203,1280,186.7C1333.3,171,1387,181,1413,186.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+            </path>
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,128L48,149.3C96,171,192,213,288,218.7C384,224,480,192,576,192C672,192,768,224,864,213.3C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- <header class="page-header gradient" style="background-image: linear-gradient(rgb(70 60 201 / 63%), rgba(14, 13, 12, 0.7)), 
+    url('./assets/header.jpg');">
+        <div class="conatiner pt-2">
+            <div class="row align-items-center justify-content-center" style="width: 100%">
+                <div class="col-md-5 mt-5 mb-5 ">
+                    <h2 class="text-center"><span class="heading">AFFABLE INFOTECH I.T.C</span></h2>
+                    <hr>
+                    <p class="fs-6 text-break">“Every business can benefit from good quality
+                        management consulting services.
+                        Consultants are able to gather, assemble and utilize data in unique ways.
+                    </p>
+                    <button type="button" class="btn btn-outline-primary btn-lg"
+                        style="margin-left: 25%;">Services</button>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,170.7C384,171,480,213,576,202.7C672,192,768,128,864,133.3C960,139,1056,213,1152,229.3C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+    </header> -->
+
+    <section class="services">
+        <div class="conatiner text-center">
+            <div class="row align-content-center justify-content-center" style="width: 100%;">
+                <div class="col-md-5">
+                    <p class="service-name"><span>ELV Solutions</span></p>
+                </div>
+                <div class="col-md-5">
+                    <p class="service-name"><span>ELV Consultancy</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutus">
+        <div class="container mt-5 ">
+            <div class="row mb-5 align-content-center justify-content-center">
+                <div class="col-md-6 mt-3">
+                    <div class="contact-img">
+                        <img src="./assets/about.jpg" alt="about" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div class="about-desc mb-2">
+                        <p class="text-break lh-base text-para" style="color: #383482;
+                word-spacing: 8.4px;font-weight: bolder;">
+                            <span style="font-size: xx-large;"><b>W</b></span>e aim in providing right
+                            and specific solutions to clients.
+                            We take care of the growing market in the state of Qatar with our
+                            knowledge and expertise.
+                        </p>
+
+                        <br><br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-content-center justify-content-center">
+                <div class="col-md-4">
+                    <div class="about-item text-center">
+                        <i class="bi bi-journals"></i>
+                        <h3>MISSION</h3>
+                        <hr>
+                        <p class="text-md-start">To deliver high-quality,
+                            cost-effective projects on schedule by employing and
+                            supporting motivated, flexible, and focused teams. We value the importance of
+                            our relationships and will continue to remain fair and true in our dealings
+                            with all employees, clients, vendors, and partners.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-item text-center">
+                        <i class="bi bi-globe"></i>
+                        <h3>VISSION</h3>
+                        <hr>
+                        <p class="text-md-start">To deliver high-quality,
+                            cost-effective projects on schedule by employing and
+                            supporting motivated, flexible, and focused teams. We value the importance of
+                            our relationships and will continue to remain fair and true in our dealings
+                            with all employees, clients, vendors, and partners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactus" style="background-image: linear-gradient(rgb(70 60 201 / 63%), rgba(14, 13, 12, 0.7)), 
+    url('./assets/conatct.jpg');">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,192L26.7,186.7C53.3,181,107,171,160,160C213.3,149,267,139,320,154.7C373.3,171,427,213,480,208C533.3,203,587,149,640,117.3C693.3,85,747,75,800,90.7C853.3,107,907,149,960,186.7C1013.3,224,1067,256,1120,250.7C1173.3,245,1227,203,1280,186.7C1333.3,171,1387,181,1413,186.7L1440,192L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+
+            </path>
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,128L48,149.3C96,171,192,213,288,218.7C384,224,480,192,576,192C672,192,768,224,864,213.3C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="box-mission ">
+                        <h3><span class="pt-2"><span class="text-sub-head">
+                                    <b><span class="fs-2">C</span>ooperating <span class="fs-2">W</span>ith <span
+                                            class="fs-2">U</span>s</b></span></span></h3>
+                    </div>
+                    <div class="about-desc mb-2">
+                        <p class="text-break lh-base text-para" style="color: #adb5bd;
+                  word-spacing: 8.4px;">
+                            <span style="font-size: xx-large;"><b>W</b></span>e offer you the best services in all kinds
+                            of
+                            information and communication technologies such as Security Solution, Networking Solution,
+                            parking Solution,
+                            Fibre Optic Solutions , Electric Solutions, Software and Cloud services and System
+                            Integrated parking Solutions.
+                            We look forward to collebrating with you and make a good experience with "Affable".
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us mb-5">
+        <div class="conatiner contact-cont">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1"
-                    d="M0,256L48,234.7C96,213,192,171,288,170.7C384,171,480,213,576,202.7C672,192,768,128,864,133.3C960,139,1056,213,1152,229.3C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    d="M0,128L48,128C96,128,192,128,288,133.3C384,139,480,149,576,149.3C672,149,768,139,864,138.7C960,139,1056,149,1152,170.7C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
                 </path>
             </svg>
-        </header>
+
+            <div class="row justify-content-center" style="width: 100%; margin-top:-100px">
+                <div class="col-md-6">
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-1">
+                            <i class="bi bi-geo-alt-fill icon-color"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="contact-label">
+                                Visit us </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8" style="margin-top: -35px; margin-bottom: -25px;">
+                            <P class="contact-font text-md-start text-wrap label-style lh-lg align-middle">
+                                Office no: 03, Building no: 14, <br>
+                                Abdul Rahman Bin Jassim Street, <br>
+                                AL Wakra, Doha, Qatar
+                            </P>
+                            <hr style="width: auto;">
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-1">
+                            <i class="bi bi-telephone-fill icon-color"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="contact-label">
+                                Telephone </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8" style="margin-top: -35px; margin-bottom: -25px;">
+                            <P class="contact-font text-md-start text-wrap label-style lh-lg align-middle">
+                                <span>Mobile <b>:</b></span>+974 50216760 <br>
+                                <span>Landline <b>:</b></span>+974 44357958
+                            </P>
+                            <hr style="width: auto;">
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-1">
+                            <i class="bi bi-send-fill icon-color"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="contact-label">
+                                Email </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8" style="margin-top: -35px; margin-bottom: -25px;">
+                            <P class="contact-font text-md-start text-wrap label-style lh-lg align-middle">
+                                info@innovizqatar.com
+                            </P>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-5 mt-6">
+                        <h3 style="color: 000; text-align: start;">Contact Us</h3>
+                    </div>
+                    <form class="g-3 needs-validation" id="formID" (ngSubmit)="sendEnquiry()" #f="ngForm" novalidate>
+                        <div class="mb-3 form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="fname" placeholder="First Name">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="lname" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="Your E-mail Address" pattern="[^ @]*@[^ @]*">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" placeholder="Contact Number" name="phone"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="company" placeholder="Company Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <textarea class="form-control" cols="30" rows="3" name="message"
+                                        placeholder="Your Message">
+                                </textarea>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="gap-1 col-md-8 mx-auto mb-5">
+                                <button type="submit" class="btn btn-primary btn-lg"
+                                    style="background: linear-gradient(191deg, rgb(27 30 70) 40%, rgb(33 42 88 / 95%) 65%);"
+                                    (click)="sendEnquiry()">
+                                    Send Message
+                                    <!-- <span class="spinner-border text-primary" *ngIf="emailSentSuccess" role="status">
+                          </span> -->
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </section>
+    <div>
+        <section #aboutus class="heading-section img-fluid" style="
+  background-image: linear-gradient(rgb(14 10 64 / 63%), rgba(14, 13, 12, 0.7)),
+  url('./assets/elvservices3.jpg');">
+            <div id="aboutUsContentID" class="caption" style="text-align: center;">
+                <div class="row ">
+                    <div class="col-md-12 ">
+                        <h1>SERVICES</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-details mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,64L48,85.3C96,107,192,149,288,144C384,139,480,85,576,90.7C672,96,768,160,864,170.7C960,181,1056,139,1152,133.3C1248,128,1344,160,1392,176L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+            <div class="conatiner">
+                <div class="conatiner">
+                    <div class="row  text-center align-items-center justify-content-center " style="width: 100%;">
+                        <div class="col-md-12 ">
+                            <h4 style="font-weight: 800;
+            color: #084298;">OUR SERVICES</h4>
+                        </div>
+                    </div>
+                    <div class="row text-center align-items-center justify-content-center" style="width: 100%;">
+                        <div class="col-md-8 text-heading">
+                            <h1>We are a full services Electrical Contractor</h1>
+                            <!-- <p class="service-subheading">We are a full services Electrical Contractor</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mb-5">
+                    <div class="row mb-5" style="width: 100%;">
+                        <div class="col-md-4 mb-5">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/elvservice1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/elvservice2.jpg" class="card-img-top" alt="..." height="230px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+    <section class="service-home" style="background: aliceblue;">
+
+        <div class="conatiner ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,128L48,128C96,128,192,128,288,133.3C384,139,480,149,576,149.3C672,149,768,139,864,138.7C960,139,1056,149,1152,170.7C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+            <div class="row">
+                <div class="col-md-12 text-center align-items-center justify-content-center">
+                    <h5 style="font-weight: bold; color: #084298;">OUR SERVICES</h5>
+                </div>
+                <div class="row text-center align-items-center justify-content-center" style="width: 100%;">
+                    <div class="col-md-8 text-heading1 mb-5">
+                        <h1>We are a full service Electrical Contractor</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 text-center align-items-center justify-content-center">
+                <div class="col col-md-4 border border-1 p-4 hover-effect">
+                    ELV Solitions
+                </div>
+                <div class="col col-md-4 border border-1 p-4 hover-effect">
+                    ELV Consultancy
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="site-footer background-change" *ngIf="!showSpinner">
+        <div class="container" style="color: darkgray;">
+            <div class="row pt-5">
+                <div class="col-md-6">
+                    <span class="heading">Our Company</span>
+                    <div class="space-align"></div>
+                    <p>We aim in providing right and specific solutions to clients.
+                        We take care of the growing market in the state of Qatar with our knowledge and expertise.
+                    </p>
+                    <div class="space-align"></div>
+                    <!-- <div class="social-media-buttons">
+                <button type="button" class="btn btn-primary linkedIn-button" (click)="linkedIn()"><i
+                    class="bi bi-linkedin"></i></button>
+              </div> -->
+                </div>
+                <div class="col-md-6">
+                    <span class="heading align-items-center justify-content-center">Contact Us</span>
+                    <div class="space-align"></div>
+                    <ul class="list-unstyled footer-link">
+                        <li class="d-flex">
+                            <span class="me-3" style="padding-right: 15px;">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </span>
+                            <span class="tex-white">Abdul Rahman Bin Jassim Street, <br>
+                                AL Wakrah, <br>Doha, Qatar</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="me-3" style="padding-right: 15px;">
+                                <i class="bi bi-telephone-fill"></i>
+                            </span>
+                            <span class="tex-white">+974 44357958</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="me-3" style="padding-right: 15px;">
+                                <i class="bi bi-phone-fill"></i>
+                            </span>
+                            <span class="tex-white">+974 50216760 </span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="me-3" style="padding-right: 15px;">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <span class="tex-white">info@innovizqatar.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-4">
+              <span class="heading">Quick Links</span>
+              <div class="space-align"></div>
+              <ul class="list-unstyled footer-link">
+                <li><a routerLink="/our-company">Our Company</a></li>
+                <li><a routerLink="/services">Services</a></li>
+                <li><a routerLink="/careers">Careers</a></li>
+                <li><a routerLink="/contact">Contact</a></li>
+              </ul>
+            </div> -->
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text md center text-center">
+                    <p>Copyright @2022: Made with smile by Renetta @ Innoviz systems. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -93,44 +549,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <script>
-        var menubtn = document.querySelector("#menu-btn");
-        var sidenav = document.querySelector('#sidenav');
-        var container = document.querySelector('.body-container');
-        var btnClose = document.querySelector(".btn-close");
-        var navlink = document.querySelector(".nav-item");
-        sidenav.classList.add("active-nav");
-        container.classList.add("active-body-container");
-        menubtn.addEventListener('click', () => {
-            sidenav.classList.toggle("active-nav");
-            container.classList.toggle("active-body-container");
-            menubtn.classList.add("align-btn");
-            sidenav.classList.remove("hide-nav");
-            container.classList.remove("align-body");
-        });
-
-        btnClose.addEventListener('click', () => {
-            sidenav.classList.add("hide-nav");
-            container.classList.add("align-body");
-            sidenav.classList.remove("active-nav");
-            container.classList.remove("active-body-container");
-        });
-
-        navlink.addEventListener('click', () => {
-            sidenav.classList.add("hide-nav");
-            container.classList.add("align-body");
-            sidenav.classList.remove("active-nav");
-            container.classList.remove("active-body-container");
-        });
-
-        // document.querySelectorAll('.nav-item').forEach(el => {
-        //     el.addEventListener('click', function () {
-        //         console.log(this.current);
-        //     });
-        // });
-
-
-    </script>
 </body>
 
 </html>
