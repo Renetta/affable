@@ -1,5 +1,5 @@
 <?php include('components/head.in.php') ?>
-<?php include('components/navbar.in.php') ?>
+<?php include('components/navbar-head.in.php') ?>
 <div>
 <section #aboutus class="heading-section img-fluid" style="
   background-image: linear-gradient(rgb(14 10 64 / 63%), rgba(14, 13, 12, 0.7)),
@@ -7,7 +7,7 @@
     <div id="aboutUsContentID" class="caption" style="text-align: center;">
         <div class="row " style="width: 100%;">
             <div class="col-md-12 " data-aos="slide-down">
-                <h1>SERVICES</h1>
+                <h3 style="font-weight: 700">SERVICES</h3>
             </div>
         </div>
     </div>
@@ -20,8 +20,8 @@
         <div class="conatiner" >
             <div class="conatiner">
                 <div class="row text-center align-items-center justify-content-center" style="width: 100%;">
-                    <div class="col-md-6 text-heading1 mb-5" data-aos="slide-up">
-                        <h1>We are a full service ELV Consultant</h1>
+                    <div class="col-md-6 text-heading-new mb-5" data-aos="slide-up">
+                        <h1>One stop for comprehensive ELV packages</h1>
                         <!-- <p class="service-subheading">We are a full services Electrical Contractor</p> -->
                     </div>
                 </div>
@@ -34,18 +34,27 @@
                             <img src="./assets/elvsoln.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><b>ELV Consultancy  </b></h5>
-                                <p class="card-text">We deliver the complete range of ELV consulting services to our client’s</p>
+                                <p class="card-text">We deliver the complete range of ELV consulting services</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5" data-aos="slide-left">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/ictbanner5.png" class="card-img-top" alt="..." height="115px">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>ELV Solutions</b></h5>
+                                <p class="card-text">We provide all kinds of IT & ELV solutions</p>
                                 <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4" data-aos="slide-left">
                         <div class="card" style="width: 18rem;">
-                            <img src="./assets/elvservice2.jpg" class="card-img-top" alt="..." height="230px">
+                            <img src="./assets/elvservice1.jpg" class="card-img-top" alt="..." height="115px">
                             <div class="card-body">
-                                <h5 class="card-title"><b>ELV Solution</b></h5>
-                                <p class="card-text">We provide all kinds of Information and Communications
-                                technology solutions</p>
+                                <h5 class="card-title"><b>ELV Maintenance</b></h5>
+                                <p class="card-text">We provide all kinds of ELV maintenance services</p>
                                 <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             </div>
                         </div>

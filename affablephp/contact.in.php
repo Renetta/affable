@@ -1,5 +1,5 @@
 <?php include('components/head.in.php') ?>
-<?php include('components/navbar.in.php') ?>
+<?php include('components/navbar-head.in.php') ?>
 
 
 <!-- <section class="contact-us" style="background-image: url('./assets/conatct.jpg');"> -->
@@ -70,7 +70,7 @@
                         <div class="col-md-1"></div>
                         <div class="col-md-8" style="margin-top: -35px; margin-bottom: -25px;">
                             <P class="contact-font text-md-start text-wrap label-style lh-lg align-middle">
-                                info@innovizqatar.com
+                                info@affableqatar.com
                             </P>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     action="mail.php" novalidate method="POST">
                         <div class="mb-3 form-group">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-3">
                                     <input type="text" class="form-control" name="fname" placeholder="First Name">
                                 </div>
                                 <div class="col-md-4">
@@ -94,7 +94,7 @@
                         </div>
                         <div class="mb-3 form-group">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-3">
                                     <input type="email" class="form-control" name="email"
                                         placeholder="Your E-mail Address" pattern="[^ @]*@[^ @]*">
                                 </div>
@@ -138,9 +138,10 @@
                         <?php
 
                             if(!$_GET) {
-
+                                
                             } else { 
                                 ?>
+                                
                                 <p>
                                 Message has been sent successfully.
                                 thank you.
@@ -154,6 +155,17 @@
                     </form>
                 </div>
             </div>
+            <!-- <div class="row justify-content-center" style="width: 100%;">
+                <div class="col-md-6 footer-align">
+                    <div class="row p-3 mb-5 map-box">
+                    <div id="map-container-google-11" class="z-depth-1-half map-container" 
+                    style="height: 400px;">
+                        <iframe src="https://maps.google.com/maps?q=INNOVIZ+SYSTEMS&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
 
     </section>

@@ -18,7 +18,7 @@
     $eol = "\r\n";
     $separator = md5(time());
 
-    $to = "innovizqatar@gmail.com";
+    $to = "info@affableqatar.com";
     $body = "";
     $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
     $body .= "Content-Transfer-Encoding: 8bit" . $eol;
@@ -27,8 +27,8 @@
     $body .= "Email:- ".$from."\r\n\n";
     $body .= "Message: ".$message."\r\n\n";
 
-    $fromname ="Innoviz Systems";
-    $fromemail = 'enquiry@innovizqatar.com';
+    $fromname ="Affable Infotect I.T.C";
+    $fromemail = 'enquiry@affableqatar.com';
     
     $headers = "From: ".$fromname." <".$fromemail.">" . $eol;
     $headers .= "(This is an enquiry mail)." . $eol;
@@ -45,7 +45,7 @@
         $replybody .= "Affable Infotech\r\n\n"; 
 
         $replyfrom ="Affable Infotech";
-        $replymail = 'noreply@innovizqatar.com';
+        $replymail = 'noreply@affableqatar.com';
 
         $headers = "From: ".$replyfrom." <".$replymail.">" . $eol;
         $headers .= "(This is an auto-generated mail. Please do not reply)." . $eol;

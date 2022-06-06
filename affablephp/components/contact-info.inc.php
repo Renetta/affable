@@ -15,7 +15,7 @@
                     </div>
                     <div class="about-desc mb-2">
                         <p class="text-break lh-base text-para" style="color: #adb5bd;
-                  word-spacing: 8.4px;">
+                  word-spacing: 8.4px;     font-size: 15px;">
                             <span style="font-size: xx-large;"><b>W</b></span>e offer you the best services in all kinds
                             of
                             information and communication technologies such as Security Solution, Networking Solution,

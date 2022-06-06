@@ -1,4 +1,56 @@
-<section class="service-home" style="background: aliceblue;">
+<section class="service-home mt-5" > 
+        <div class="conatiner conatiner-background-new mb-5">
+           
+            <div class="row" style="width: 100%;">
+                <div class="col-md-6 " data-aos="slide-right">
+                    <!-- <img class="container-image-new" src="assets/elvservice5.jpg" alt=""> -->
+                    <div class="contact-img">
+                        <img src="./assets/elvservice5.jpg" alt="about" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-5 column-m-left-new">
+                    <div class="row" style="width: 100%">
+                        <div class="row service-home-row-new text-center align-items-center justify-content-center" style="width: 100%;">
+                            <div class="col-md-12 text-heading-new mb-3" data-aos="fade-down">
+                                <h2>Comprehensive ELV Package</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row list-style-row-new">
+                        <ul class="list-style-new">
+                            <li data-aos="fade-left"><span>Elv Solutions</span></li>
+                            <li data-aos="fade-right"><span>Elv Consultancy</span></li>
+                            <li data-aos="fade-left"><span>Elv Maintenance</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-md-12" data-aos="fade-down">
+                            <p class="text-md-start service-home-para-new">As Extra Low Voltage (ELV) system consultants we support the Clients, Architects, Project Managers, 
+                                Builders & Turnkey /MEP Contractors to develop cost effective project specific ELV 
+                                design leading to fully integrated functional buildings often referred as Smart Intelligent
+                                 Buildings.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row align-items-center mb-5 text-center align-items-center justify-content-center"
+                    style="width: 100%;">
+                        <div class="col col-md-6 border border-1 p-3 hover-effect mb-5" data-aos="slide-up">
+                            ELV Solutions
+                        </div>
+                        <div class="col col-md-6 border border-1 p-3 hover-effect mb-5" data-aos="slide-down">
+                            ELV Consultancy
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    
+    </section>
+
+<!-- <section class="service-home" style="background: aliceblue;"> 
         <div class="conatiner mb-5">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1"
@@ -29,4 +81,4 @@
 
         </div>
     
-    </section>
+    </section> -->
