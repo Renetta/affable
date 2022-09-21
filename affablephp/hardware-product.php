@@ -19,7 +19,7 @@
             <div class="row mb-5">
                 <div class="col-md-12">
                         <u><h4 class="mb-5" style="font-weight: 500; color: #00093c;">
-                        Our Products & Services - Samsung Display Solutions</h4></u>
+                        Our Products & Services</h4></u>
                         <div class="row ">
                             <div class="col-md-6">
                                 <ol style="list-style-type: disclosure-closed;">
@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <u><h4 class="mb-5" style="font-weight: 500; color: #00093c;">
-                    Our Hardware Products - NEC Display Solutions</h4></u>
+                    Our Hardware Products</h4></u>
                     <div class="row ">
                         <div class="col-md-6">
                             <ol style="list-style-type: disclosure-closed;">
@@ -98,7 +98,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <u><h4 class="mb-5" style="font-weight: 500; color: #00093c;">
-                    Our Hardware Products - INNOVIZ Customized Display Solutions</h4></u>
+                    Our Hardware Products - Customized Display Solutions</h4></u>
                     <div class="row ">
                         <div class="col-md-6">
                             <ol style="list-style-type: disclosure-closed;">

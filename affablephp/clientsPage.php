@@ -16,15 +16,16 @@
                 <div class="col-md-2  border border-1 text-center p-3 mb-5" style="margin-right: 10px;">
                     <img src="assets/mannai.jpg" alt=""  class="client-img" height="100" width="100">
                 </div>
+                <div class="col-md-2 p-3 mb-5  border border-1 text-center " style="margin-right: 10px;">
+                    <img src="assets/innoviz1.png" alt=""  class="client-img" height="100" width="120">
+                </div>
                 <div class="col-md-2  border border-1 text-center p-3 mb-5" style="margin-right: 10px;">
                     <img src="assets/salam.jpg" alt=""  class="client-img" height="100" width="150">
                 </div>
                 <div class="col-md-2  border border-1 text-center p-3 mb-5" style="margin-right: 10px;">
                     <img src="assets/jaber.jpg" alt=""  class="client-img" height="100" width="150">
                 </div>
-                <div class="col-md-2 p-3 mb-5  border border-1 text-center " style="margin-right: 10px;">
-                    <img src="assets/novax.jpg" alt=""  class="client-img" height="100" width="150">
-                </div>
+                
             </div>
             <div class="row mb-5">
                 <div class="col-md-2 p-3 mb-5  border border-1 text-center " style="margin-right: 10px;">
@@ -34,7 +35,7 @@
                     <img src="assets/takyeef.jpg" alt=""  class="client-img" height="100" width="150">
                 </div>
                 <div class="col-md-2 p-3 mb-5  border border-1 text-center " style="margin-right: 10px;">
-                    <img src="assets/innoviz.jpg" alt=""  class="client-img" height="100" width="100">
+                    <img src="assets/novax.jpg" alt=""  class="client-img" height="100" width="150">
                 </div>
                 <div class="col-md-2 p-3 mb-5  border border-1 text-center " style="margin-right: 10px;">
                     <img src="assets/cbq.jpg" alt=""  class="client-img" height="100" width="150">

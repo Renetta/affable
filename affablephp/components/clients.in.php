@@ -19,6 +19,9 @@
                             <img src="assets/mannai.jpg" alt=""  class="client-img" height="100" width="100">
                         </div>
                         <div class="item box">
+                            <img src="assets/innoviz1.png" alt=""  class="client-img" height="100" width="120">
+                        </div>
+                        <div class="item box">
                             <img src="assets/salam.jpg" alt=""  class="client-img" height="100" width="150">
                         </div>
                         <div class="item box">
@@ -33,9 +36,7 @@
                         <div class="item box">
                             <img src="assets/takyeef.jpg" alt=""  class="client-img" height="100" width="150">
                         </div>
-                        <div class="item box">
-                            <img src="assets/innoviz.jpg" alt=""  class="client-img" height="100" width="100">
-                        </div>
+                        
                         <div class="item box">
                             <img src="assets/cbq.jpg" alt=""  class="client-img" height="100" width="200">
                         </div>
